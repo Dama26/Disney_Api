@@ -16,7 +16,7 @@ export default function DetailScreen({ route }) {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        {/* Imagen principal con borde Dorado Auradon */}
+      
         <View style={styles.imageContainer}>
           <Image
             source={{
@@ -27,7 +27,6 @@ export default function DetailScreen({ route }) {
           />
         </View>
 
-        {/* Nombre y Botón Favoritos */}
         <View style={styles.header}>
           <Text style={styles.name}>{character.name}</Text>
           <TouchableOpacity
@@ -40,7 +39,6 @@ export default function DetailScreen({ route }) {
           </TouchableOpacity>
         </View>
 
-        {/* Sección Películas / Cortos */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>🎬 Películas y Especiales</Text>
           {character.films && character.films.length > 0 ? (
@@ -54,7 +52,6 @@ export default function DetailScreen({ route }) {
           )}
         </View>
 
-        {/* Sección Series de TV */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>📺 Series y Animación</Text>
           {character.tvShows && character.tvShows.length > 0 ? (
@@ -68,7 +65,6 @@ export default function DetailScreen({ route }) {
           )}
         </View>
 
-        {/* Videojuegos */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>🎮 Videojuegos</Text>
           {character.videoGames && character.videoGames.length > 0 ? (

@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "disney-app",
+    "slug": "disney-app",
+    "version": "1.0.0",
+    "entryPoint": "./app.js",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0c192c",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 100
+        }
+      ]
+    ]
+  }
+}
